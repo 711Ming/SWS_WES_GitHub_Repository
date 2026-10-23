@@ -1,0 +1,41 @@
+# 人类测序数据及分析结果不应默认提交到公开仓库
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.bam
+*.bai
+*.cram
+*.crai
+*.vcf
+*.vcf.gz
+*.tbi
+*.csi
+results/
+logs/
+*.out
+*.err
+*.tmp
+
+# 本地配置包含真实路径或样本信息，默认不提交
+config.yaml
+config/analysis.env
+config/pairs.tsv
+
+# Reference files, intermediate annotation files, and common analysis artifacts
+*.fa
+*.fasta
+*.fna
+*.fai
+*.dict
+*.avinput
+*.multianno.txt
+*.maf
+*.g.vcf
+*.g.vcf.gz
+*.bed
+*.bim
+*.fam
+*.pgen
+*.pvar
+*.psam
