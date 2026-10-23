@@ -1,0 +1,17 @@
+# 复制为 config.yaml，并将 /path/to/... 替换为实际路径。
+# 参考基因组版本按现有配置设为 GRCh37。
+reference: "/path/to/WES_pipeline/Homo_sapiens.GRCh37.dna.primary_assembly.fa"
+gatk: "/path/to/gatk-4.6.0.0/gatk"
+bwa: "/path/to/bwa/bwa"
+trimmomatic: "/path/to/Trimmomatic-0.39/trimmomatic-0.39.jar"
+adapters: "/path/to/Trimmomatic-0.39/adapters/TruSeq3-PE.fa"
+samtools: "/path/to/samtools"
+results_dir: "/path/to/SWS_WES/results"
+
+samples:
+  CASE01_PV:
+    R1: "/path/to/FASTQ/CASE01_PV_R1.clean.fq.gz"
+    R2: "/path/to/FASTQ/CASE01_PV_R2.clean.fq.gz"
+  CASE01_SWS:
+    R1: "/path/to/FASTQ/CASE01_SWS_R1.clean.fq.gz"
+    R2: "/path/to/FASTQ/CASE01_SWS_R2.clean.fq.gz"
